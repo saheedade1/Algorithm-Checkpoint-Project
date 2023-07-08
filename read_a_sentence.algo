@@ -1,0 +1,13 @@
+VAR
+    sentence : STRING;
+    num_sent_char, word_count: INTEGER;
+    countVowels : FUNCTION;
+BEGIN
+    Read(sentence)
+    num_sent_char := sentence.length;
+    Write(num_sent_char)
+    num_words := sentence.split();
+    Write(num_words)
+    countVowels(sentence) := sentence.match(/[aeiou]/);
+    Read(countVowels)
+END
